@@ -2,25 +2,33 @@
 //  ContentView.swift
 //  HotProspects
 //
-//  Created by Rob Ranf on 4/10/24.
+//  Created by Rob Ranf on 4/11/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    let users = ["Tohru", "Yuki", "Kyo", "Yui", "Megumin"]
-    @State private var selection = Set<String>()
-    @State private var selectedTab = "One"
-    
     var body: some View {
-        List(users, id: \.self, selection: $selection) { user in
-            Text(user)
-        }
-        
-        EditButton()
-        
-        if selection.isEmpty == false {
-            Text("You selected \(selection.formatted())")
+        TabView {
+            ProspectsView(filter: .none)
+                .tabItem {
+                    Label("Everyone", systemImage: "person.3")
+                }
+            
+            ProspectsView(filter: .contacted)
+                .tabItem {
+                    Label("Contacted", systemImage: "checkmark.circle")
+                }
+            
+            ProspectsView(filter: .uncontacted)
+                .tabItem {
+                    Label("Uncontacted", systemImage: "questionmark.diamond")
+                }
+            
+            MeView()
+                .tabItem {
+                    Label("Me", systemImage: "person.crop.square")
+                }
         }
     }
 }
