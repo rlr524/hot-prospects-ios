@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D445687A2CABA4A00050BAA4 /* EditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44568792CABA4A00050BAA4 /* EditingView.swift */; };
+		D445687C2CABAB660050BAA4 /* SortableProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445687B2CABAB660050BAA4 /* SortableProspectsView.swift */; };
 		D44892B32BC7092700612B91 /* TabViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44892B22BC7092700612B91 /* TabViewTest.swift */; };
 		D44892B52BC71A9A00612B91 /* ResultViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44892B42BC71A9A00612B91 /* ResultViewTest.swift */; };
 		D44892B82BC7664900612B91 /* ImageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44892B72BC7664900612B91 /* ImageViewTest.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D44568792CABA4A00050BAA4 /* EditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingView.swift; sourceTree = "<group>"; };
+		D445687B2CABAB660050BAA4 /* SortableProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableProspectsView.swift; sourceTree = "<group>"; };
 		D44892B22BC7092700612B91 /* TabViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTest.swift; sourceTree = "<group>"; };
 		D44892B42BC71A9A00612B91 /* ResultViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewTest.swift; sourceTree = "<group>"; };
 		D44892B72BC7664900612B91 /* ImageViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTest.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				D4564AC52BC897C200CB4477 /* ContentView.swift */,
 				D4564AC72BC8A4FD00CB4477 /* ProspectsView.swift */,
 				D4564AC92BC8A50F00CB4477 /* MeView.swift */,
+				D44568792CABA4A00050BAA4 /* EditingView.swift */,
+				D445687B2CABAB660050BAA4 /* SortableProspectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,12 +209,14 @@
 				D44892B32BC7092700612B91 /* TabViewTest.swift in Sources */,
 				D4D70DE22BC87BE70065FCAC /* ContextMenuViewTest.swift in Sources */,
 				D4564AC62BC897C200CB4477 /* ContentView.swift in Sources */,
+				D445687A2CABA4A00050BAA4 /* EditingView.swift in Sources */,
 				D4564AC82BC8A4FD00CB4477 /* ProspectsView.swift in Sources */,
 				D4564ACA2BC8A50F00CB4477 /* MeView.swift in Sources */,
 				D4D70DE42BC88EE90065FCAC /* PackagesViewTest.swift in Sources */,
 				D44892B52BC71A9A00612B91 /* ResultViewTest.swift in Sources */,
 				D4C8F9442BC6FA1800133693 /* NotificationViewTest.swift in Sources */,
 				D49B02E12BD4550E00AFE3A5 /* Prospect.swift in Sources */,
+				D445687C2CABAB660050BAA4 /* SortableProspectsView.swift in Sources */,
 				D4C8F9422BC6FA1800133693 /* HotProspectsApp.swift in Sources */,
 				D44892B82BC7664900612B91 /* ImageViewTest.swift in Sources */,
 			);
@@ -354,6 +362,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +370,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emiyaconsulting.HotProspects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +406,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emiyaconsulting.HotProspects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
